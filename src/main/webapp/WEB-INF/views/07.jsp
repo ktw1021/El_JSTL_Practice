@@ -21,9 +21,15 @@
     session name = <%=session.getAttribute("name") %> <br/>
     application name = <%=application.getAttribute("name") %> <br/>
 	
-	<h2>el</h2>                   
-	
-
+	<h2>el</h2>            
+	<h3>특정 스코프의 속성에 접근</h3>
+	<ul>   
+		<li>noScope name = ${name }</li>
+		<li>Page Scope : ${pageScope.name }</li>    
+		<li>Request Scope : ${requestScope.name }</li>
+		<li>Session Scope : ${sessionScope.name }</li>
+		<li>Application Scope : ${applicationScope.name }</li>
+	</ul>
 
 
 
